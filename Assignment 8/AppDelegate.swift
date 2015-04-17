@@ -8,8 +8,6 @@
 
 import UIKit
 import CoreData
-
-import Parse
 //
 ////@implementation AppDelegate
 ////
@@ -46,9 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor(red: 96.0/255.0, green: 96.0/255.0, blue: 96.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
-        
-        Parse.enableLocalDatastore()
-        Parse.setApplicationId("xRdImF7tO44k8LEERhS05mSnDkZT2AyX5gzev5RM", clientKey: "FZyKAMgevxioTEzX3mSWKFmShTFvgAJZr6lhdxL8")
+
 //        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(nil){
 //            test in
 //        }
