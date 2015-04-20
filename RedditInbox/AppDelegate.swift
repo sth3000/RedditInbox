@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RedditInbox
 //
-//  Created by Panthe on 4/19/15.
-//
+//  Created by Tom Hart on 3/12/15.
+//  Copyright (c) 2015 Tom Hart. All rights reserved.
 //
 
 import UIKit
