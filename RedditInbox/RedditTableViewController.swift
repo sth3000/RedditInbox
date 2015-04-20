@@ -1,6 +1,6 @@
 //
 //  RedditTableViewController.swift
-//  Assignment 8
+//  RedditInbox
 //
 //  Created by Tom Hart on 3/5/15.
 //  Copyright (c) 2015 Tom Hart. All rights reserved.
