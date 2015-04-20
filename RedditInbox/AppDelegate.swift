@@ -2,30 +2,11 @@
 //  AppDelegate.swift
 //  RedditInbox
 //
-//  Created by Tom Hart on 2/22/15.
-//  Copyright (c) 2015 Tom Hart. All rights reserved.
+//  Created by Panthe on 4/19/15.
+//
 //
 
 import UIKit
-import CoreData
-//
-////@implementation AppDelegate
-////
-////- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-////    // [Optional] Power your app with Local Datastore. For more info, go to
-////    // https://parse.com/docs/ios_guide#localdatastore/iOS
-////    [Parse enableLocalDatastore];
-////    
-////    // Initialize Parse.
-////    [Parse setApplicationId:@"xRdImF7tO44k8LEERhS05mSnDkZT2AyX5gzev5RM"
-////    clientKey:@"FZyKAMgevxioTEzX3mSWKFmShTFvgAJZr6lhdxL8"];
-////    
-////    // [Optional] Track statistics around application opens.
-////    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-////    
-////    // ...
-////}
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-            
+        
         if Handler.getSubreddits().count == 0 {
             var subreddit = SubReddit(name: "r/funny", color: SettingsTableViewCell().getRandomColor())
             Handler.saveSubreddits([subreddit])
@@ -67,8 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
     }
+
 
 }
 
